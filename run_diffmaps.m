@@ -14,8 +14,8 @@ for fileId = 1:num_files
     filename = char(datafiles(fileId).name);
     labels(fileId) = {string(filename(1:end-4))}; % take away '.txt'
 %     filename = char(useFiles(fileId));
-%     thisfile = load_as_time_vals(filename);
-    thisfile = load_text_data(filename);
+    thisfile = load_as_time_vals(filename);
+%     thisfile = load_text_data(filename);
     
     real_coordinates(fileId, :) = extract_real_coords_from_file(filename);
     data = [data; reshape(thisfile, 1, [])];
