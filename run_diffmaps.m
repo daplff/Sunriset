@@ -1,6 +1,6 @@
 
 
-datafiles = dir('*.txt');
+datafiles = dir('Data/*.txt');
 num_files = max(size(datafiles));
 % useFiles = {'Lund.txt', 'Cambridge.txt',  'Hamburg.txt', 'Munich.txt', 'Berlin.txt', 'Cologne.txt'};
 % useFiles = {'Hamburg.txt', 'Munich.txt', 'Berlin.txt', 'Cologne.txt', 'Frankfurt.txt'};
